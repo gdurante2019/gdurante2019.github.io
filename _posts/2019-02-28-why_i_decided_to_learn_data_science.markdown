@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Why I Decided to Learn Data Science:  "
-date:       2019-03-01 02:13:30 +0000
+title:      "Why Data Science?   Why Now?  "
+date:       2019-02-28 21:13:31 -0500
 permalink:  why_i_decided_to_learn_data_science
 ---
 
@@ -18,3 +18,5 @@ To me, the field of data science offers numerous opportunities to apply analytic
 One area about which I am passionate is environmental protection and sustainability.  I’ve spent the better part of my career seeking to understand the science and complex interplay of economics, sociology, politics, and psychology that contribute to climate change.  The tools of data science can improve our ability to understand and communicate the risks and effects of climate change in a way that people can readily grasp.  This is crucial in preparing for the most challenging aspects of climate change.  
 
 I’m keenly interested in ways to effectively communicate complex subjects and information in a world that is increasingly saturated with information—and misinformation.  The tools of data science are an important ally in communicating the challenges posed by climate change, and what we as a society can do to address them.  Visually interesting graphs, images, and animations can convey complex information in an intuitive manner and make it easier for even non-technical audiences to better understand causes and effects and make decisions based on this knowledge.
+
+After a couple of years of learning about the field of data science and exploring different programs and courses of study (including self-study using some of the many fantastic online resources), I decided to go with Flatiron's structured full-time program.  I'm excited to be in a structured program with a comprehensive curriculum and a cohort of other online full-time data science students!  Looking forward to the next steps in this journey.  
