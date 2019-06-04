@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "King County Housing Price Analysis:  Surprises, Musings, and Analysis"
+title:      "King County Housing Price Analysis:  Analysis, Surprises, and Musings"
 date:       2019-06-04 05:13:52 -0400
 permalink:  king_county_housing_price_analysis_surprises_musings_and_further_analysis
 ---
