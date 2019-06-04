@@ -35,14 +35,12 @@ After initial data scrubbing to eliminate null values and ensure that the data p
 * Little or no correlation with price:  sqft_lot, sqft_lot15 (lot size of 15 nearest neighbors), view, and floors
 * Unclear correlation with price:  yr_built, yr_renovated, lat/long, zipcode, waterfront, and sqft_basement
 
-### ***“We interrupt this program for a special announcement…”***
-### 
+### ***“We interrupt this program for a special announcement…”***  
 Before continuing with the findings and thoughts about surprises, I thought it might be helpful to talk a bit about my experience as I worked my way through this first project.  The scatter matrix visualizations are an instructive example:  they provide very useful guidance regarding where to focus one’s efforts, but as a student in learning mode, I wasn’t entirely sure how to use them.  I ended up spending a lot of time going through multiple iterations of the scrubbing, EDA, and modeling processes, because I was afraid of “missing” something or “losing” an important variable.  I also experimented with cutoff points for outliers, creating lots of dummy variables (then deciding not to use most of them), etc.  Finally, I ran quite a number of model iterations, first with individual variables, then with combinations of variables.  I think I went through just about every iteration possible, and exhausted myself in the process.  
 
 While I did derive some value in going through this process, I ended up sacrificing sleep and time that could have been spent keeping up with (or getting ahead on) the curriculum materials that followed.   Having experienced this, I now understand the value of more targeted approaches, and look forward to gaining the tools to balance open exploration and discovery with efficient workflow processes that will allow me to approach the process in a more systematic fashion.  
 
-### ***“Now back to our regularly scheduled program…”***
-### 
+### ***“Now back to our regularly scheduled program…”*** 
 Getting back to results…as I proceeded through the project, I eventually developed a model that achieved a very high R-squared score (98-99%, depending on which 3 or 4 variables I chose) with a small number of features.  In addition to the high R-squared score, the model shows a low skew (0.372), a kurtosis value of 3.072, a Jarque-Bera (JB) score of 399, and a Condition Number of 50.1.  I gained a high degree of confidence in this model’s ability to capture the key factors involved in home values in King County.  
 
 And yet…there were a few surprises that prompted more questions.  Without going into great detail here, I found that certain features that are commonly assumed to influence home values appeared to have little or no impact in my model for this data set.  Life experience and “common knowledge” strongly suggest that these features actually do have an impact on home price.  I wondered if the scale of the geographic area might be obscuring these relationships.  For example, running the model with a small subset (just homes in one zip code, for example) might yield a more pronounced effect in the model of features such as waterfront or lot size.  
