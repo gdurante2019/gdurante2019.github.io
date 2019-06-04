@@ -6,7 +6,7 @@ permalink:  king_county_housing_price_analysis_surprises_musings_and_further_ana
 ---
 
 
-Whether we’re consciously aware of it or not, we humans (and most other life forms on the planet) are wired to notice and seek out novelty.  Whether searching for food or avoiding predators, our ancestors had to be good at observing and respond to novel events in the environment or get kicked out of the gene pool.  
+We humans (and most other life forms on the planet) are wired to notice and seek out novelty.  Whether searching for food or avoiding predators, our ancestors had to be good at observing and respond to novel events in the environment or get kicked out of the gene pool.  
 
 Surprises are a kind of novel event.  One reason why the field of data science is so interesting is that one can find novel or even surprising results in virtually any data set and data analysis.  Surprises can be both fascinating and perplexing, presenting us with puzzles to ponder and riddles to solve.  We might expect to see certain results, but seeing something unusual compels us to look further—first, to figure out whether or not we made an error; second (and more exciting), to find a potentially novel relationship in the data.  
 
@@ -34,6 +34,8 @@ After initial data scrubbing to eliminate null values and ensure that the data p
 * Strong correlation with price:  sqft_living, sqft_above (square footage of living space above basement level), sqft_living15 (square footage of living space of 15 nearest neighbors), number of bedrooms, number of bathrooms, condition, and grade
 * Little or no correlation with price:  sqft_lot, sqft_lot15 (lot size of 15 nearest neighbors), view, and floors
 * Unclear correlation with price:  yr_built, yr_renovated, lat/long, zipcode, waterfront, and sqft_basement
+
+
 
 ### ***“We interrupt this program for a special announcement…”***  
 Before continuing with the findings and thoughts about surprises, I thought it might be helpful to talk a bit about my experience as I worked my way through this first project.  The scatter matrix visualizations are an instructive example:  they provide very useful guidance regarding where to focus one’s efforts, but as a student in learning mode, I wasn’t entirely sure how to use them.  I ended up spending a lot of time going through multiple iterations of the scrubbing, EDA, and modeling processes, because I was afraid of “missing” something or “losing” an important variable.  I also experimented with cutoff points for outliers, creating lots of dummy variables (then deciding not to use most of them), etc.  Finally, I ran quite a number of model iterations, first with individual variables, then with combinations of variables.  I think I went through just about every iteration possible, and exhausted myself in the process.  
