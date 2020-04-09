@@ -127,14 +127,14 @@ The findings below are preliminary, and some are based on the more detailed anal
     * What correlation, if any, was there between the difference between market peaks and troughs, versus the subsequent higher recovery values in 2018?  (In other words, how did markets with a more ‘typical’ plot fare against markets that did not experience dramatic highs and lows during the market bubble?)
   * **Initial observations:**
     * Of the semi-finalists in the Sac metro region, ZIPs with 2018 values that were higher than the 2006-2007 peak values (e.g., Sacramento-Del Rios, Arden-Arcade), tended to have greater representation in the mediocre and lower ratings groups…  
-  ![higher than 2018 worse performance](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_2018_higher_arden_delrios.png)
-    * …whereas the top 5 ZIP codes all had 2018 valuations at or slightly lower than the 2006-2007 peak:
-  ![lower than 2018 better performance](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_2018_lower_auburn_slaketahoe1.png)
+    ![higher than 2018 worse performance](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_2018_higher_arden_delrios.png)
+		…whereas the top 5 ZIP codes all had 2018 valuations at or slightly lower than the 2006-2007 peak:
+		![lower than 2018 better performance](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_2018_lower_auburn_slaketahoe1.png)
    
    * It is worth noting that there were also a number of cases where ZIPs with higher 2018 values still had good investment ratings, and also ZIPs where the 2018 values had not reached values at the height of the bubble, and yet they had mediocre or poor ratings
    * On the other hand, a quick review of a few other metro areas that did not experience a large drop in values during the recession, but which experienced significant market value gains during the recovery, suggests that these areas have the potential for significant continued market value gains
- 
- ***Recommendation:***  Markets that did not see a big bubble, but which have experienced 2018 values higher than values during the market bubble, warrant further investigation
+   
+ * **Recommendation:**  Markets that did not see a big bubble, but which have experienced 2018 values higher than values during the market bubble, warrant further investigation
  
 ### Further analyses to consider
 * Given that ARIMA analyses gives greater weight to more recent observations, it would be interesting to see how the slope of the curve in the most recent 6-12 months (2017-2018) of actual housing market values correlates with forecast
