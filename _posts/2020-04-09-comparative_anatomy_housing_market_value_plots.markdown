@@ -104,7 +104,7 @@ Below are some key shape variations that I noticed across metro areas.  These sh
 
 ![final 6-12 months of data](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_final_6-12_months_curve1.png)
 
-### Some initial findings regarding a couple of shape features
+### Some initial findings regarding shape features
 
 The findings below are preliminary, and some are based on the more detailed analysis I performed on ZIP codes in the Sacramento metro area.  Others also draw upon what I observed in the metro area analyses.
 
