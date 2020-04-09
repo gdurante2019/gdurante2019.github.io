@@ -128,7 +128,7 @@ The findings below are preliminary, and some are based on the more detailed anal
   * **Initial observations:**
     * Of the semi-finalists in the Sac metro region, ZIPs with 2018 values that were higher than the 2006-2007 peak values (e.g., Sacramento-Del Rios, Arden-Arcade), tended to have greater representation in the mediocre and lower ratings groups…  
   ![higher than 2018 worse performance](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_2018_higher_arden_delrios.png)
-   * …whereas the top 5 ZIP codes all had 2018 valuations at or slightly lower than the 2006-2007 peak:
+    * …whereas the top 5 ZIP codes all had 2018 valuations at or slightly lower than the 2006-2007 peak:
   ![lower than 2018 better performance](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_2018_lower_auburn_slaketahoe1.png)
    
    * It is worth noting that there were also a number of cases where ZIPs with higher 2018 values still had good investment ratings, and also ZIPs where the 2018 values had not reached values at the height of the bubble, and yet they had mediocre or poor ratings
