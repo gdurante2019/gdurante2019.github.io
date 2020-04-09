@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Comparative Anatomy:  Housing Market Value Plots"
-date:       2020-04-09 06:24:28 +0000
+date:       2020-04-09 02:24:37 -0400
 permalink:  comparative_anatomy_housing_market_value_plots
 ---
 
@@ -112,20 +112,13 @@ The findings below are preliminary, and some are based on the more detailed anal
   * I could not find an apparent relationship between shape of peak and market performance
   * This surprised me; for example, I thought that a broader peak might correspond to a stronger recovery and forecasted growth, but this was not consistently true
 * ***Earlier peak*** — How do markets with an earlier peak during the bubble fare versus those that peaked later?  
- * Initially, I had thought that an earlier peak might be correlated with worse predicted values, but in looking at the semi-finalists in the Sac metro region, there isn’t enough evidence to support this
-  * While two of the worst performers (Sacramento-DelRios and Arden-Arcade) peaked particularly early...
+  * Initially, I had thought that an earlier peak might be correlated with worse predicted values, but in looking at the semi-finalists in the Sac metro region, there isn’t enough evidence to support this
+   * While two of the worst performers (Sacramento-DelRios and Arden-Arcade) peaked particularly early...
+    ![earlier bubble worse](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_early_peak_arden_delrios.png)
+   * ... other ZIPs with early peaks did better (e.g., Granite Bay, Rescue—two of the top 5 ZIPs):
+    ![earlier bubble better](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_early_peak_gb_rescue.png)
 
-![earlier bubble worse](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_early_peak_arden_delrios.png)
-
-
-  * ... other ZIPs with early peaks did better (e.g., Granite Bay, Rescue—two of the top 5 ZIPs):
-
-![earlier bubble better](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_early_peak_gb_rescue.png)
-
-
-  * Further, some of the later-peaking ZIPs received some of the lowest ratings
-
-* 2018 values exceeding market heights during the bubble—For markets that saw values increase to new highs in 2018 that were even higher than the highest point of the housing market bubble in 2007
+* ***2018 values exceeding market heights during the bubble***—For markets that saw values increase to new highs in 2018 that were even higher than the highest point of the housing market bubble in 2007
   * **Questions:**
     * Would their results differ from those markets that have rebounded, but have not yet reached the highs seen during the housing bubble? 
     * Are the markets at new highs experiencing a new ‘bubble’, or are the new highs merely a reflection of a strong local economy or other factors (e.g., gentrification of an area or longer-term population trends in the area) that have led to sustainable valuations?  
@@ -133,24 +126,18 @@ The findings below are preliminary, and some are based on the more detailed anal
     * What correlation, if any, was there between the difference between market peaks and troughs, versus the subsequent higher recovery values in 2018?  (In other words, how did markets with a more ‘typical’ plot fare against markets that did not experience dramatic highs and lows during the market bubble?)
   * **Initial observations:**
     * Of the semi-finalists in the Sac metro region, ZIPs with 2018 values that were higher than the 2006-2007 peak values (e.g., Sacramento-Del Rios, Arden-Arcade), tended to have greater representation in the mediocre and lower ratings groups…  
-
   ![higher than 2018 worse performance](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_2018_higher_arden_delrios.png)
-
-
    * …whereas the top 5 ZIP codes all had 2018 valuations at or slightly lower than the 2006-2007 peak:
-
   ![lower than 2018 better performance](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_2018_lower_auburn_slaketahoe1.png)
-
-
+   
    * It is worth noting that there were also a number of cases where ZIPs with higher 2018 values still had good investment ratings, and also ZIPs where the 2018 values had not reached values at the height of the bubble, and yet they had mediocre or poor ratings
    * On the other hand, a quick review of a few other metro areas that did not experience a large drop in values during the recession, but which experienced significant market value gains during the recovery, suggests that these areas have the potential for significant continued market value gains
  
  ***Recommendation:***  Markets that did not see a big bubble, but which have experienced 2018 values higher than values during the market bubble, warrant further investigation
-
+ 
 ### Further analyses to consider
 * Given that ARIMA analyses gives greater weight to more recent observations, it would be interesting to see how the slope of the curve in the most recent 6-12 months (2017-2018) of actual housing market values correlates with forecast
 * Another area of potential interest is the correlation, if any, between post-crash dip relative to 2003 values and predicted values
-
 
 ## Conclusion
 In this blog, I’ve sought to highlight some of the variations in market value plots for a variety of geographic areas, and suggest possible relationships to explore further.  Because the original Zillow dataset is so large, my broader intent is to highlight how exploratory data analysis and visualizations can help guide our decisions regarding which data to analyze and the best methods to choose.  
