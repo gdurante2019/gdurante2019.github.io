@@ -118,6 +118,7 @@ The findings below are preliminary, and some are based on the more detailed anal
    * ... other ZIPs with early peaks did better (e.g., Granite Bay, Rescue—two of the top 5 ZIPs):
     ![earlier bubble better](https://raw.githubusercontent.com/gdurante2019/dsc-mod-4-project-online-ds-sp-000/master/images/blog_early_peak_gb_rescue.png)
 
+
 * ***2018 values exceeding market heights during the bubble***—For markets that saw values increase to new highs in 2018 that were even higher than the highest point of the housing market bubble in 2007
   * **Questions:**
     * Would their results differ from those markets that have rebounded, but have not yet reached the highs seen during the housing bubble? 
