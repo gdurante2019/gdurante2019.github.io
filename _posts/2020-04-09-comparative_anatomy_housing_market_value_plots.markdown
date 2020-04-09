@@ -5,8 +5,12 @@ date:       2020-04-09 02:24:37 -0400
 permalink:  comparative_anatomy_housing_market_value_plots
 ---
 
-## Overview
+## Introduction
 The Module 4 Project in the Flatiron School Data Science Version 2 Curriculum provides students with experience in working with time series data—in this case, monthly housing values from 04/01/1996 to 03/01/2018 for over 14,000 ZIP Codes in the U.S.   Analyzing this data requires data science tools capable of handling large data sets.  I created a Jupyter notebook using python, numpy, pandas, matplotlib, seaborn, and used Internet search engines to get information about how to accomplish various technical tasks.
+
+Because the original Zillow dataset is so large, my broader intent for this blog post is to highlight how exploratory data analysis and visualizations can help guide our decisions regarding which data to analyze and the best methods to choose.
+
+## Project Overview
 
 The project asks students to identify the 5 "best" ZIP codes for investment (as defined by the student) and develop support for these recommendations to a hypothetical client (e.g., a real estate investment trust).  The student must develop a methodology for evaluating ZIP codes as potential investment targets and support these findings through analysis using Jupyter notebook.  The student must also prepare a non-technical PowerPoint presentation and a blog post. 
 
@@ -141,5 +145,5 @@ The findings below are preliminary, and some are based on the more detailed anal
 * Another area of potential interest is the correlation, if any, between post-crash dip relative to 2003 values and predicted values
 
 ## Conclusion
-In this blog, I’ve sought to highlight some of the variations in market value plots for a variety of geographic areas, and suggest possible relationships to explore further.  Because the original Zillow dataset is so large, my broader intent is to highlight how exploratory data analysis and visualizations can help guide our decisions regarding which data to analyze and the best methods to choose.  
+In this blog, I’ve sought to highlight some of the variations in market value visualizations for a variety of geographic areas, and suggest possible relationships to explore further.  Because the original Zillow dataset is so large, my broader intent is to highlight how exploratory data analysis and visualizations can help guide our decisions regarding which data to analyze and the best methods to choose.  
 
