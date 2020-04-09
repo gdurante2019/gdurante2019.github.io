@@ -39,7 +39,7 @@ Before exploration shape variations, let’s define what a “typical” pattern
 
 *NOTE:  while the housing bubble peaked around 2006 for most markets, it is worth noting that the Case-Shiller National Home Price Index noted a record drop (over 18% on average) in home values in the last 3 months of 2008.  This is the reason for the red line in the graph above at the beginning of 2009.  The bubble had burst, but the housing market continued to show weakness, and any remaining talk of a relatively shallow market decline and relatively quick recovery was replaced by much more negative sentiment, which lasted at least a couple of years afterwards.*  
 
-#### Variations on the “typical” pattern
+### Variations on the “typical” pattern
 
 There were several variations that I noted when looking at market value plots at the metro, city, and ZIP code level.  Though I have not yet had time to perform analyses investigating each of these—and I doubt that they would all be predictive of future outcomes—I did observe some tantalizing correlations and I think further analysis could yield additional useful insights into visualization assessment.
 
