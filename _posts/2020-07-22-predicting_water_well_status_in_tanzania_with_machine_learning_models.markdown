@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      " Predicting Water Well Status in Tanzania with Machine Learning Models"
-date:       2020-07-23 00:39:34 +0000
+date:       2020-07-22 20:39:35 -0400
 permalink:  predicting_water_well_status_in_tanzania_with_machine_learning_models
 ---
 
