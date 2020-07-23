@@ -45,7 +45,7 @@ Here are the steps that the function performs to produce a subset of dummy varia
 
 Below are the functions required to set the top ‘n’ values for dummy variable creation.  
 
-#### First function
+### First function
 The first is a helper function that takes a single feature and groups the dataframe by number of projects for that feature, creates a duplicate feature column, renames any feature value not in the top ‘n’ list as ‘other’, and returns the modified dataframe.
 
 ```
@@ -70,7 +70,7 @@ def name_replace_less_than_n(df, col, n=125, p=126, new_name='other'):
 
 ``` 
 
-#### Second function
+### Second function
 The second function iterates through this process for each feature in the feature list provided to the function, then specifies features to use in modeling and performs encoding of the features and target of the resulting dataframe.  
 
 ```
