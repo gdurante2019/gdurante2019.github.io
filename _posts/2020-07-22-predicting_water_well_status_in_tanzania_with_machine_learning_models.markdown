@@ -24,7 +24,7 @@ Because *all* of the features I used in this project were categorical (non-ordin
 ### A potential solution
 To reduce the ‘noise’ of the dataset, I created a function that sorts the top ‘n’ feature values by number of projects, then groups the remaining values (total-minus-n feature values) into a category called ‘other’.  Instead of converting hundreds / thousands of feature values into dummy variables, we now have n+1 dummy variables for this feature.  
 
-For example, say I have a feature with 2,000 unique values (names).  Converting all of the values of this feature into dummy variables will result in 2,000 dummy variables.  However, if we select n=50, the function will keep the top 50 names (sorted from greatest number of projects associated with each name to the least) and replace the remaining 1,950 values with ‘other’, resulting in 51 dummy variables—a big difference from 2,000 dummy variables for one feature alone!
+For example, the feature 'funder' has 1,898 unique values (names of funders).  Converting all of the values of this feature into dummy variables will result in 1,898 dummy variables, one for each name in the 'funder' feature!  However, if we select n=50, the function will keep the top 50 names (sorted from greatest number of projects associated with each name to the least) and replace the remaining 1,848 values with ‘other’, resulting in 51 dummy variables—a big difference from 1,898 dummy variables for one feature alone!
 
 This function was very useful for generating different size datasets for modeling, and has helped me identify a ‘sweet spot’ for the number of feature values to include (‘n’ in the range of 100 to 150 seems to give good results). 
 
