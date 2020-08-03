@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Data Science Toolbox:  Function to Create Top 'n' Values"
+title:      "Data Science Toolbox:  Function to Create Top n Values"
 date:       2020-07-22 20:39:35 -0400
 permalink:  data_science_toolbox_function_to_create_top_n_values
 ---
