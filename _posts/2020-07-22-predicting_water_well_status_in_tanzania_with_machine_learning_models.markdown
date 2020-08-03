@@ -2,7 +2,7 @@
 layout: post
 title:      "Data Science Toolbox:  Function to Create Top "n" Values"
 date:       2020-07-22 20:39:35 -0400
-permalink:  predicting_water_well_status_in_tanzania_with_machine_learning_models
+permalink:  data_science_toolbox_function_to_create_top_n_values
 ---
 
 
