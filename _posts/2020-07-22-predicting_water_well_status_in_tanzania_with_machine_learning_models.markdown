@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      " Predicting Water Well Status in Tanzania with Machine Learning Models"
+title:      " Data Science Toolbox:  Function to Create Top "n" Values"
 date:       2020-07-22 20:39:35 -0400
 permalink:  predicting_water_well_status_in_tanzania_with_machine_learning_models
 ---
@@ -16,10 +16,10 @@ Tanzania is a developing country that is home to over 57,000,000 people.  The go
 
 The government of Tanzania has collaborated with Taarifa, a non-profit organization, to create a database of all of the water supply projects in the country (3).  Data for each water supply project includes information about the project’s geographic location, local water abundance and quality, technical information (e.g., type of well), funder, installer, project administration, and more.  
 
-DrivenData, a social enterprise that works with mission-driven organizations, is hosting a competition to predict water well status using machine learning algorithms (4).  DrivenData provides data to participants in the competition in the form of a .csv file and very brief descriptors for each field.  The 'training' dataset provided by DrivenData contains data and functional status for 59,400 water supply projects.  The 'test' dataset provides data, but not functional status, for 14,850 wells.  Participants develop machine learning models and submit their predictions--‘functional’, ‘non-functional’, or ‘functional, needing repair’--for these wells.  DrivenData compares each participant’s predictions against the actual status of the wells and returns an accuracy score for the participant’s prediction dataset.
+DrivenData, a social enterprise that works with mission-driven organizations, is hosting a competition to predict water well status using machine learning algorithms (4).  DrivenData provides data to participants in the competition in the form of a .csv file and *very* brief descriptors for each field.  The 'training' dataset provided by DrivenData contains data and functional status for 59,400 water supply projects.  The 'test' dataset provides data, but not functional status, for 14,850 wells.  Participants develop machine learning models and submit their predictions--‘functional’, ‘non-functional’, or ‘functional, needing repair’--for these wells.  DrivenData compares each participant’s predictions against the actual status of the wells and returns an accuracy score for the participant’s prediction dataset.
 ## Data preparation for modeling
 ### The problem
-*All* of the features I used in this project were categorical (non-ordinal), and so required encoding to be read by the model.  However, because I was using scikit-learn classifiers, label encoding was not appropriate for features.  Thus, it was necessary to to convert features to dummy variables.  Considering that some features literally have hundreds or thousands of values each, creating dummy variables for all of these values would result in thousands of dummy variables!  
+*All* of the features I used in this project were categorical (non-ordinal), and so required encoding to be read by the model.  However, because I was using scikit-learn classifiers, label encoding was not appropriate for features.  Thus, it was necessary to convert features to dummy variables.  Considering that some features literally have hundreds or thousands of values each, creating dummy variables for all of these values would result in thousands of dummy variables!  
 
 ### A potential solution
 To reduce the ‘noise’ of the dataset, I created a function that sorts the top ‘n’ feature values by number of projects, then groups the remaining values (total-minus-n feature values) into a category called ‘other’.  Instead of converting hundreds / thousands of feature values into dummy variables, we now have n+1 dummy variables for this feature.  
