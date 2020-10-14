@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Capstone Project:  Data Science meets DNA"
+title:      "Capstone Project:  Data Science meets DNA (Part 1 of 2)"
 date:       2020-10-13 15:37:21 -0400
 permalink:  capstone_project_data_science_meets_dna
 ---
