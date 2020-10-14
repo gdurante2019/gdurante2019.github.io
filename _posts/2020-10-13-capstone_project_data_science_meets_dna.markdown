@@ -13,14 +13,15 @@ For my Flatiron data science capstone, I chose a unique, engaging, and challengi
 Before I describe the modeling approaches I took, what I learned, and possible next steps for the analysis, I’ll provide a very brief overview of DNA and plasmids for the uninitiated.
 
 ## Quick primer on basic DNA structure and plasmids
-![DNA structure.gif](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/ master/242px-DNA_Structure%2BKey%2BLabelled.pn_NoBB.png)
+![DNA structure.gif](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/242px-DNA_Structure%2BKey%2BLabelled.pn_NoBB.png)
 ### DNA Basics
 DNA (Deoxyribonucleic acid) is found in all living things and carries the genetic instructions for development, function, growth, and reproduction of each individual.  The basic structure of DNA is the double helix, formed by the attraction of complementary DNA base pairs (A and T, G and C) across a gap between two vertical “backbone” molecules.  The resulting ‘spiral staircase’ structure has the DNA base pairs as steps and the phosphate backbone molecules as the spiraling handrails.  Perhaps even more remarkable than the molecule’s elegant structure is the fact that the four base pairs, or “letters” in this genetic alphabet, are all that are required to to encode the vast majority of genetic and functional information in DNA.  
 
-![DNA_animation.gif](https://raw.githubusercontent.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/ master/DNA_animation.gif)
+![DNA_animation.gif](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/DNA_animation.gif)
 
 ### What are Plasmids?
 While most people have heard of chromosomes, ‘plasmid’ isn’t exactly a household word.  As opposed to chromosomes, which contain large amounts of DNA in a tightly coiled superstructure, plasmids are much smaller circular DNA constructs that contain only the ‘bare bones’ DNA needed to accomplish certain tasks.  Examples of sequences found in plasmids include those for molecular products such as proteins, functional motifs (such as ‘start’ and ‘stop’ signals), attachment sites for macromolecules, regulatory instructions, and more.  Their small size, standardized sequences, and well-characterized performance in various lab conditions make safe, reliable, and replicable research and production activities possible.
+
 ![plasmid_map.png](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/addgene-plasmid-42230-sequence-59271-map_small.png)
 
 ## The Business Problem:  Tracking Plasmid Lab-of-Origin
@@ -53,12 +54,15 @@ The DrivenData webpage for this competition provided a link to a blog post by Dr
 To familiarize myself with the data and the project, I walked through the blog and implemented the starter code provided.  Then I explored the data, taking particular note of the variety in the length of sequences (from 20 to 60099 base pairs!), fstribution of sequence lengths in the dataset, and the number of plasmids provided by each lab, which turned out to be heavily skewed, as just a small fraction of all labs contribute the majority of sequences to the AddGene database.  
 
 ![histogram_plasmid_lengths](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/plasmid_lengths_hist.png)
+
 Over 30% of plasmids are quite small (less than 1000 base pairs) but then the distribution of  plasmids between 1000 and 8000 base pairs appears to be a fairly normal distribution 
 
 ![histogram_plasmid_count_num_labs](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/labs_by_plasmid_num_hist.png)
+
 The purpose of this graphic is simply to show that the vast majority of labs contribute very few plasmids to the database!
 
 ![distribution of labs contributing 200 or fewer plasmids](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/labs_200_plasmids_or_less.png)
+
 Zooming in on the bulk of labs' contributions, we can see that the great majority contribute less than 100 plasmids 
 
 After exploring the data, I began running models, in a two-phase process described below.
@@ -73,20 +77,20 @@ I had some ideas for engineered features, so building on this basic modeling app
 As a reminder, the Random Forest model used here has two scoring metrics.  The first is the accuracy of the model selecting the correct lab out of all possible labs (1,314).  The second is the accuracy of the top-10 most probable labs including the correct lab.  
 
 Performance of Random Forest baseline model:
-•	First score (accuracy based on selecting the correct lab out of all labs)
-o	The baseline model had an accuracy score of 0.1144770 (11.4%)
-o	If we were to just randomly select one lab out of a (very large) hat containing all 1,314 labs (each lab represented once), then 11.4% is much better than chance
-o	However, a more realistic random chance evaluation would be to select randomly from the pool of labs where the likelihood of selecting a particular lab were proportional to how many plasmids it contributed to the database; in that case, you would actually be better off just guessing the lab with the largest representation in the database (lab ID 'I7FXTVDP') every time, because that lab contributed over 13% of all plasmids to the database. 
-•	Second score (top-10 most likely labs prediction contains the correct lab)
-o	Baseline model score: 31% 
-o	Again, this is better than the likelihood that the correct lab would be contained in a list of 10 labs chosen at random from the pool of 1,314 (approximately 1 in 131, or 0.76%)
-o	However, because 10 labs contribute just over 30% of all plasmids to the database, you wouldn’t do much worse to just picking the top 10 labs by number of contributions for every plasmid
+* First score (accuracy based on selecting the correct lab out of all labs)
+  * The baseline model had an accuracy score of 0.1144770 (11.4%)
+  *	If we were to just randomly select one lab out of a (very large) hat containing all 1,314 labs (each lab represented once), then 11.4% is much better than chance
+  *	However, a more realistic random chance evaluation would be to select randomly from the pool of labs where the likelihood of selecting a particular lab were proportional to how many plasmids it contributed to the database; in that case, you would actually be better off just guessing the lab with the largest representation in the database (lab ID 'I7FXTVDP') every time, because that lab contributed over 13% of all plasmids to the database. 
+* Second score (top-10 most likely labs prediction contains the correct lab)
+  * Baseline model score: 31% 
+  * Again, this is better than the likelihood that the correct lab would be contained in a list of 10 labs chosen at random from the pool of 1,314 (approximately 1 in 131, or 0.76%)
+  * However, because 10 labs contribute just over 30% of all plasmids to the database, you wouldn’t do much worse to just picking the top 10 labs by number of contributions for every plasmid
 
 Summary of performance of feature-engineered models:
-•	Baseline:  11.4% / 31%
-•	DrivenData starter model:  19% / 38% 
-•	Model using my first engineered feature set:  17% / 36%
-•	Model using my second engineered feature set:  14% / 38%
+* Baseline:  11.4% / 31%
+* DrivenData starter model:  19% / 38% 
+* Model using my first engineered feature set:  17% / 36%
+* Model using my second engineered feature set:  14% / 38%
 
 As we can see, the second, third, and fourth models performed better than baseline, but not by much.  
 
