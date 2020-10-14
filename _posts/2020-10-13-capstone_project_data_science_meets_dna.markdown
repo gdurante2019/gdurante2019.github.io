@@ -13,11 +13,11 @@ For my Flatiron data science capstone, I chose a challenging, engaging, and fair
 Before I describe the modeling approaches I took, what I learned, and possible next steps for the analysis, I’ll provide a very brief overview of DNA and plasmids for the uninitiated.
 
 ## Quick primer on basic DNA structure and plasmids
-![DNA structure.png](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/242px-DNA_Structure%2BKey%2BLabelled.pn_NoBB.png)
+![DNA structure.png](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/master/242px-DNA_Structure%2BKey%2BLabelled.pn_NoBB.png)
 ### DNA Basics
 DNA (Deoxyribonucleic acid) is found in all living things and carries the genetic instructions for development, function, growth, and reproduction of each individual.  The basic structure of DNA is the double helix, formed by the attraction of complementary DNA base pairs (A and T, G and C) across a gap between two vertical “backbone” molecules.  The resulting ‘spiral staircase’ structure has the DNA base pairs as steps and the phosphate backbone molecules as the spiraling handrails.  Perhaps even more remarkable than the molecule’s elegant structure is the fact that the four base pairs, or “letters” in this genetic alphabet, are all that are required to to encode the vast majority of genetic and functional information in DNA.  
 
-![DNA_animation.gif](https://raw.githubusercontent.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/DNA_animation.gif)
+![DNA_animation.gif](https://raw.githubusercontent.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/master/DNA_animation.gif)
 
 ### What are Plasmids?
 While most people have heard of chromosomes, ‘plasmid’ isn’t exactly a household word.  As opposed to chromosomes, which contain large amounts of DNA in a tightly coiled superstructure, plasmids are much smaller circular DNA constructs that contain only the ‘bare bones’ DNA needed to accomplish certain tasks.  Examples of sequences found in plasmids include those for molecular products such as proteins, functional motifs (such as ‘start’ and ‘stop’ signals), attachment sites for macromolecules, regulatory instructions, and more.  Their small size, standardized sequences, and well-characterized performance in various lab conditions make safe, reliable, and replicable research and production activities possible.
