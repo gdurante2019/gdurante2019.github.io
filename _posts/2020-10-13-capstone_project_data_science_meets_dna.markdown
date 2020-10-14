@@ -57,7 +57,7 @@ To familiarize myself with the data and the project, I walked through the blog a
 
 Over 30% of plasmids are quite small (less than 1000 base pairs) but then the distribution of  plasmids between 1000 and 8000 base pairs appears to be a fairly normal distribution 
 
-![histogram_plasmid_count_num_labs](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/labs_by_plasmid_num_hist_reform.pnghttps://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/labs_by_plasmid_num_hist.png)
+![histogram_plasmid_count_num_labs](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/labs_by_plasmid_num_hist_reform.png)
 
 The purpose of this graphic is simply to show that the vast majority of labs contribute very few plasmids to the database!
 
