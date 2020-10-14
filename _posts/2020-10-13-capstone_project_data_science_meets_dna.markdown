@@ -1,12 +1,14 @@
 ---
 layout: post
 title:      "Capstone Project:  Data Science meets DNA"
-date:       2020-10-13 19:37:20 +0000
+date:       2020-10-13 15:37:21 -0400
 permalink:  capstone_project_data_science_meets_dna
 ---
 
 
-For my Flatiron data science capstone project, I developed an interesting and challenging project based on a current data science competition hosted by DrivenData for algorithms to predict the labs-of-origin for DNA constructs called plasmids.  Researching this topic allowed me to both revisit the molecular biology (which I had studied in college) and to learn more much about convolutional neural networks more than I had imagined I would so close to my Flatiron graduation date!  
+For my Flatiron data science capstone, I chose a challenging, engaging, and fairly unique problem posed by a current data science competition (the Genetic Engineering Attribution Challenge, sponsored by altLabs and hosted by DrivenData) to develop new algorithms to predict the labs-of-origin for DNA constructs called plasmids.  Plasmids have been used for decades in molecular cloning applications and are critically important to both research activities and industrial production.  However, the increasing availability of advanced methods and tools for genetic engineering raises the specter of potential harm due to unintended or malicious activities by a broader range of people.  Thus, the development of tools that can correctly identify the lab of origin for a given plasmid is becoming ever more important and urgent.
+
+(As a side note, researching this topic gave me the opportunity to revisit the molecular biology (which I had studied in college) and to work with convolutional neural networks more than I had imagined I would so close to my Flatiron graduation date!)
 
 Before I describe the modeling approaches I took, what I learned, and possible next steps for the analysis, I’ll provide a very brief overview of DNA and plasmids for the uninitiated.
 
