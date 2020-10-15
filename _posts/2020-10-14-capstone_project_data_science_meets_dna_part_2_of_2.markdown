@@ -14,7 +14,7 @@ In Part 2 of my capstone project blog post, I will pick up on the thought proces
 The purpose of the competition is to encourage participants to develop algorithms that can predict with reasonable accuracy which lab produced a particular DNA plasmid.  
 
 ## Key Considerations for Selecting a Particular Neural Network (NN) Architecture 
-As I described in my last post, a big ‘a-ha’ moment for me was realizing the ways in which DNA sequences share some characteristics with language, and other characteristics with images, but also have some characteristics that are very different from these (especially language).  Having a certain intuitive understanding of what NNs can and can’t do effectively will likely help improve model setup and performance.  
+As I described in my last post, a big ‘a-ha’ moment for me was realizing the ways in which DNA sequences share some characteristics with language, and other characteristics with images, but also have some characteristics that are very different from both (especially language).  Having a certain intuitive understanding of what NNs can and can’t do effectively will likely help improve model setup and performance.  
 
 ## CNN architecture
 
