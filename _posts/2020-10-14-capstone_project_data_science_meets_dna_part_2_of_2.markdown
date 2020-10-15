@@ -101,7 +101,7 @@ Based on my research into CNNs and RNNs, I decided to use the following architec
     * Dropout layer (0.2, or 20%) (dropout layer was added starting with the 2nd iteration of the model)
 * Flattening layer (to enable outputs of previous layers to be fed into a Multilayer Perceptron NN)
 * One or two dense layers (depending on what I was testing) with ReLu Activation
-* An output layer (activation = ‘softmax”  returns classifications as probabilities)
+* An output layer (activation = ‘softmax”; returns classifications as probabilities)
 
 
 ## Results and Discussion
