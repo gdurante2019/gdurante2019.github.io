@@ -121,6 +121,6 @@ To the extent that DNA sequences share characteristics with language, a neural n
 Because of these differences between language and DNA sequences, I figured that some of the tools used for NLP might not work as well in identifying lab-of-origin from plasmid sequences.  I also figured that tools used for image analysis and recognition can do a better job because they can find relationships and structure at a more localized granular level and scale this information up to a meaningful whole.  From the Flatiron School curriculum and my own research, I learned that 1D CNNs are often used in NN analysis involving long sequences of information.  Thus, I decided to proceed first with the CNN and potentially explore RNNs and other approaches if time allowed.
 
 
-### This blog represents the first of two blog posts on this project.  
+#### This blog represents the first of two blog posts on this project; click to the next post to read Part 2. 
 
 
