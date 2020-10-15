@@ -1,16 +1,16 @@
 ---
 layout: post
 title:      "Capstone Project: Data Science meets DNA (Part 2 of 2)"
-date:       2020-10-15 01:12:27 +0000
+date:       2020-10-14 21:12:28 -0400
 permalink:  capstone_project_data_science_meets_dna_part_2_of_2
 ---
 
-
+## Recap of Part 1
 In Part 1 of my capstone project blog, I provided an overview of my capstone project, based on the Genetic Engineering Attribution Challenge, hosted by DrivenData for altLabs.  I gave a brief primer on DNA and plasmids, and outlined the problem that altLabs is seeking to address (the ability to identify the lab-of-origin just by the DNA sequence and some binary features of the plasmids).  I followed this up with data exploration, feature engineering, and initial modeling using Random Forests, and commented on the performance of the Random Forest models.  Finally, I laid out a thought process for evaluating which additional modeling approaches might be useful given the unique characteristics of DNA sequences relative to language or image processing, providing a rationale for using a 1D Convolutional Neural Network (CNN) for the next phase of modeling.  
 
 In Part 2 of my capstone project blog post, I will pick up on the thought process for selecting 1D Convolutional Neural Networks (CNNs) for this project, describe my data preprocessing steps, discuss my results, and identify next steps and potential future work.  
 
-## Capstone Project:  Recap of Problem Statement
+## Capstone Project:  Problem Statement
 The purpose of the competition is to encourage participants to develop algorithms that can predict with reasonable accuracy which lab produced a particular DNA plasmid.  
 
 ## Key Considerations for Selecting a Particular Neural Network (NN) Architecture 
