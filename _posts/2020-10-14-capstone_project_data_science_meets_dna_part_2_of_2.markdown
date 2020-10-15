@@ -28,9 +28,10 @@ While NNs possess formidable computational complexity, the basic structure of CN
 
 An simple schematic gives an understanding about how convolutional layer filters work:
 
-![Simple_conv_layer.gif](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/conv-full-layer.gif)
+![Simple_conv_layer.gif](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/simple_CNN_layer_filter.gif)
 
-*Image .gif file from https://analyticsindiamag.com/wp-content/uploads/2018/01/conv-full-layer.gif*
+*gif file from https://medium.com/syncedreview/a-guide-to-receptive-field-arithmetic-for-convolutional-neural-networks-42f33d4378e0*
+
 
 
 
@@ -38,7 +39,7 @@ Another slightly more complicated schematic provides some intuition about how co
 
 ![Intuitive_CNN.gif](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/intuitive_CNN.gif) 
 
-Image .gif file from KD Nuggets article “An Intuitive Explanation of Convolutional Neural Networks”,  https://www.kdnuggets.com/2016/11/intuitive-explanation-convolutional-neural-networks.html/2
+*.gif file from KD Nuggets article “An Intuitive Explanation of Convolutional Neural Networks”,  https://www.kdnuggets.com/2016/11/intuitive-explanation-convolutional-neural-networks.html/2*
 
 
 
