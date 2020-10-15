@@ -30,7 +30,7 @@ An simple schematic gives an understanding about how convolutional layer filters
 
 ![Simple_conv_layer.gif](https://github.com/gdurante2019/dsc-capstone-project-v2-online-ds-sp-000/blob/master/simple_CNN_layer_filter.gif)
 
-*gif file from https://medium.com/syncedreview/a-guide-to-receptive-field-arithmetic-for-convolutional-neural-networks-42f33d4378e0*
+*.gif file from https://medium.com/syncedreview/a-guide-to-receptive-field-arithmetic-for-convolutional-neural-networks-42f33d4378e0*
 
 
 
